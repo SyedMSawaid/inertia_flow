@@ -1,8 +1,10 @@
 # InertiaFlow
 
-TODO: Delete this and the text below, and describe your gem
+Inertia Flow moves prop building from controllers folder to views folder keeping the controllers clean and slim.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/inertia_flow`. To experiment with that code, run `bin/console` for an interactive prompt.
+The official inertia adaptor for rails “Inertia_rails” allows passing props to inertia view using instance variables of the controller like `@posts` .  But if you have to change and process your props, you have to do that within the controller, model or a model serializer.
+
+**Inertia Flow uses jbuilder to move this logic from controller to views.** Instead of building your props in the controller, you move them to views with files like `index.inertia.jbuilder`.
 
 ## Installation
 
